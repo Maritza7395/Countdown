@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+body{
+    background-image: url('../resources/background.png');
+    font-family: Roboto Condensed;
+}
+
+.centrado{
+    height: 100%;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    color: #FFFFFF;
+    text-align: center;
+}
+.play-button{
+    position: absolute;
+    right: 100px;
+}
+
+.m-top-24{
+    margin-top: 24px;
+}
+
+.u-txt-numeros{
+    font-size: 128px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150px;
+    text-align: center;
+}
+
+.u-txt-40{
+    font-size: 40px;
+    line-height: 47px;
+    font-weight: 300;
+}
+
+input{
+    width: 72%;
+    border-radius: 16px;
+    padding: 20px 16px 20px 16px;
+}
+
+input, input:disabled {
+    color: #FFFFFF;
+    font-family: 'Roboto Condensed';
+    background-color: #1A1A1A;
+    border: 0;
+}
