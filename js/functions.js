@@ -1,4 +1,4 @@
-let end = new Date(); // mes dia año
+let end = new Date();
 let _second = 1000;
 let _minute = _second * 60;
 let _hour = _minute * 60;
@@ -10,12 +10,14 @@ function start() {
     let horas = document.getElementById('horas').value;
     let minutos = document.getElementById('minutos').value;
     let segundos = document.getElementById('segundos').value;
-
-    end.setDate(end.getDate() + parseInt(dias));
-    end.setHours(end.getHours() + parseInt(horas));
-    end.setMinutes(end.getMinutes() + parseInt(minutos));
-    end.setSeconds(end.getSeconds() + parseInt(segundos));
+    let fecha = new Date();
+    fecha.setDate(fecha.getDate() + parseInt(dias));
+    fecha.setHours(fecha.getHours() + parseInt(horas));
+    fecha.setMinutes(fecha.getMinutes() + parseInt(minutos));
+    fecha.setSeconds(fecha.getSeconds() + 1 + parseInt(segundos));
+    end = fecha;
     $("#play").css("display", "none");
+    $('input').prop('readonly', true);
     load();
 }
 

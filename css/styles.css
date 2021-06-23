@@ -3,6 +3,7 @@
 body{
     background-image: url('../resources/background.png');
     font-family: Roboto Condensed;
+    user-select: none;
 }
 
 .centrado{
